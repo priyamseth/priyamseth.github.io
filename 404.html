@@ -10,8 +10,10 @@
         var notFound = 0;
         var thisUrl = location.href;
         var code = thisUrl.split('/'); // 4th one is giving the answer or say the second last one
-        var codef = code[code.length-2]
-        console.log(codef)
+        if(code[code.length-1]){ var codef = code[code.length-1] }
+        else { var codef = code[code.length-2] }
+        
+        console.log(codef);
 
         // Start here the if else ladder
         if (codef === 'pnotes'){ location.href = 'https://pnotes.web.app' }
