@@ -15,11 +15,19 @@
         
         console.log(codef);
 
+        wmap = {
+          pnotes: 'https://pnotes.web.app',
+          dehla: 'https://dehlapakad.com',
+          songs: 'https://la-musica.herokuapp.com',
+          pwho: 'https://pwho.herokuapp.com',
+          priyam: 'https://signior-x.github.io',
+          ipl: 'https://iplauction.ml'
+        }
+
         // Start here the if else ladder
-        if (codef === 'pnotes'){ location.href = 'https://pnotes.web.app' }
-        else if (codef === 'website') { location.href = 'https://signior-x.github.io' }
-        else if (codef === 'song') { location.href = 'https://la-musica.herokuapp.com' }
-        else if (codef === 'pwho') { location.href = 'https://pwho.herokuapp.com' }
+        if (wmap[codef]) {
+          location.href = wmap[codef];
+        }
         else {
             var notFound = 1;
         }
